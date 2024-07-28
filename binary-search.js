@@ -17,7 +17,7 @@ const  solve_equation = (Y) => {
   let  double right = Y;
     for (let i = 0; i < 100; ++i)  {
         let mid = (left + right) / 2;
-        let expr_result = mid * log2(mid);
+        let expr_result = mid * Math.log2(mid);
         if (expr_result < Y)
             left = mid;
         else
