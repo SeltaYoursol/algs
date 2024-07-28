@@ -1,4 +1,4 @@
-const  binary_search(arr, X) {
+const  binary_search = (arr, X)=> {
    let size_t left_idx = 0;
     let size_t right_idx = arr.length; // не включаем правую границу
     while (left_idx < right_idx) {
@@ -11,4 +11,17 @@ const  binary_search(arr, X) {
             right_idx = mid_idx;
     }
     return false;
+} 
+const  solve_equation = (Y) => {
+  let  double left = 1;
+  let  double right = Y;
+    for (let i = 0; i < 100; ++i)  {
+        let mid = (left + right) / 2;
+        let expr_result = mid * log2(mid);
+        if (expr_result < Y)
+            left = mid;
+        else
+            right = mid;
+    }
+    return left;
 } 
