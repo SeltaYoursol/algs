@@ -19,3 +19,8 @@ const bubbleSort = (arr) => {
 }
 
 console.log(bubbleSort([8, 8, 6, 4, 9, 1, 10, 22]))
+
+
+// с флагом, оптимизируется количество проходов по каждому элементу
+const bubbleSortWithFlag = (arr)=>{
+}
